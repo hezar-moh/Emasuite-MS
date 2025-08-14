@@ -1,0 +1,7 @@
+echo "# Emasuite-MS" >> README.md
+git init
+git add .
+git commit -m "add env and all file"
+git branch -M main
+git remote add origin https://github.com/hezar-moh/cms_laravel.git
+git push -u origin main
