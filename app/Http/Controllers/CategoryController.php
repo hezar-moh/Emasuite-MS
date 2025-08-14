@@ -21,14 +21,14 @@ public function store(Request $request){
         $imagePath = $request->file('image')->store('categories', 'public');
         $userInputs['image'] = $imagePath;
     }
-    $UserExist= Category::where('name', $userInputs['name'])->count();   
+    $UserExist= Category::where('name', $userInputs['name'])->count();
     if($UserExist>0){
         return "name is already exists";
     }
    else{
     Category::create($userInputs);
-    return redirect('/')->with('success', 'Category created successfully');
-   } 
+    return redirect('/category')->with('success', 'Category created successfully');
+   }
 }
 
 //WE NEED TO REMEBER NOT TO FORGET TO RUN THE COMMAND::
@@ -61,13 +61,13 @@ public function update(Request $request, $id){  //dont forget to (run php artisa
         $userInputs['image'] = $request->file('image')->store('categories', 'public'); //Store the new uploaded image inside the "categories" folder on the public disk.
     }
     $category_data->update($userInputs);
-    return redirect('/')->with('success', 'Category updated successfully');
+    return redirect('/category')->with('success', 'Category updated successfully');
 }
 
 public function destroy($id){
   $category_data = Category::find($id);
   $category_data->delete();
- return redirect('/');
+ return redirect('/category');
 }
 
 public function viewData($id){

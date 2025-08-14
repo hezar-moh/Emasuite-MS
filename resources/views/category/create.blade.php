@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('Base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <title>Document</title>
 
-</head>
-<body>
-<div class="card m-5">
-  <div class="card-body m-5">
+@section('maincontent')
+<div class="card ">
+  <div class="card-body">
     <form action="/store" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
@@ -41,7 +31,4 @@
     </form>
   </div>
 </div>
-
-</body>
-
-</html>
+@endsection

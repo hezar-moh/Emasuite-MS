@@ -1,6 +1,7 @@
 @extends('Base')
 
 @section('maincontent')
+
     <div class="text-center m-auto">
         <div class="card m-auto show shadow "  style="max-width: 18rem;">
             <div class="card-body">

@@ -1,10 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\CategoryController;
+// use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SystemController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 
-Route::get('/',[CategoryController::class,'ShowIndex']);
+Route::get('/category',[CategoryController::class,'ShowIndex'])->name('category.index');
 
 
 Route::get('/create', function(){
@@ -20,12 +24,8 @@ Route::put('/update/{id}',[CategoryController::class, 'update']);
 Route::get('/view_data/{id}',[CategoryController::class,'viewData'])->name('view_data');
 
 Route::delete('/destroy/{id}',[CategoryController::class,'destroy']);
-=======
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\SystemController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Auth;
+
+
 
 
 // Route::get('/', function () {
@@ -59,4 +59,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
->>>>>>> 4b39e77928c4d48ceb0d42a855a41879f755d08d
+
