@@ -30,6 +30,7 @@ public function store(Request $request){
     return redirect('/')->with('success', 'Category created successfully');
    } 
 }
+
 //WE NEED TO REMEBER NOT TO FORGET TO RUN THE COMMAND::
 // Run this command in your terminal:
 

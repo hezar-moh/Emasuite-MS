@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.log
 .DS_Store
 .env
@@ -22,3 +23,28 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+=======
+# *.log
+# .DS_Store
+# .env.backup
+# .env.production
+# .phpactor.json
+# .phpunit.result.cache
+# /.fleet
+# /.idea
+# /.nova
+# /.phpunit.cache
+# /.vscode
+# /.zed
+# /auth.json
+# /node_modules
+# /public/build
+# /public/hot
+# /public/storage
+# /storage/*.key
+# /storage/pail
+# /vendor
+# Homestead.json
+# Homestead.yaml
+# Thumbs.db
+>>>>>>> 4b39e77928c4d48ceb0d42a855a41879f755d08d
